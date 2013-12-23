@@ -2689,13 +2689,14 @@
 
 
     /**
-    * Remove the style tag with the associated id from the head of the document
+    * Remove the style tags from the head of the document
     *
-    * @method  remove_style_tag
+    * @method  remove_style_tags
     * @return {Object} Returns the instance of the Gridster class.
     */
     fn.remove_style_tags = function() {
         this.$style_tags.remove();
+        Gridster.generated_stylesheets = [];
     };
 
 
